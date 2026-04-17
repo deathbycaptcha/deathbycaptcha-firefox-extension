@@ -1,0 +1,180 @@
+{
+  "extName": {
+    "message": "DBC Solver: Reconocimiento y Bypass automático"
+  },
+  "extDescription": {
+    "message": "La extensión para resolver automáticamente los CAPTCHAs en cualquier página web."
+  },
+  "extShortName": {
+    "message": "Captcha Solver"
+  },
+  "optionsPageTitle": {
+    "message": "Ajustes de la extensión DeathByCaptcha"
+  },
+  "accountSettings": {
+    "message": "Ajustes de la cuenta"
+  },
+  "username": {
+    "message": "Usuario"
+  },
+  "password": {
+    "message": "Contraseña"
+  },
+  "connect": {
+    "message": "Conectar"
+  },
+  "doNotHaveAccount": {
+    "message": "¿No tienes cuenta?"
+  },
+  "createAccountToGetIt": {
+    "message": "<a href=\"#\" data-lang-link=\"$link$\" target=\"_blank\">Crea una cuenta </a> para obtenerlo.",
+    "placeholders": {
+      "link": {
+        "content": "$1"
+      }
+    }
+  },
+  "generalSettings": {
+    "message": "Ajustes generales:"
+  },
+  "enablePlugin": {
+    "message": "Habilitar extensión"
+  },
+  "submitFormsAutomatically": {
+    "message": "Enviar formularios automáticamente"
+  },
+  "settingsLink": {
+    "message": "Ajustes"
+  },
+  "manualLink": {
+    "message": "Manual"
+  },
+  "enabledSolveAutomatically": {
+    "message": "Activado / Resolver automáticamente"
+  },
+  "minScore": {
+    "message": "Min. score:"
+  },
+  "haveAnyQuestions": {
+    "message": "¿Tiene preguntas o sugerencias?"
+  },
+  "contactUs": {
+    "message": "Contáctenos: <a href=\"mailto:$email$\">$email$</a>",
+    "placeholders": {
+      "email": {
+        "content": "$1"
+      }
+    }
+  },
+  "balance": {
+    "message": "Saldo"
+  },
+  "login": {
+    "message": "Iniciar sesión"
+  },
+  "logout": {
+    "message": "Cerrar sesión"
+  },
+  "accountSuccessfullyConnected": {
+    "message": "¡Cuenta conectada con éxito!"
+  },
+  "solveWithDeathByCaptcha": {
+    "message": "Resolver con DeathByCaptcha"
+  },
+  "solving": {
+    "message": "Resolviendo..."
+  },
+  "solved": {
+    "message": "¡Captcha resuelto!"
+  },
+  "delay": {
+    "message": "Retraso"
+  },
+  "seconds": {
+    "message": "segundos"
+  },
+  "ifErrorRepeat": {
+    "message": "En caso de error, repetir"
+  },
+  "times": {
+    "message": "veces"
+  },
+  "proxySettings": {
+    "message": "Ajustes de proxy"
+  },
+  "useProxy": {
+    "message": "Usar proxy"
+  },
+  "proxyType": {
+    "message": "Tipo de proxy"
+  },
+  "images": {
+    "message": "Imágenes"
+  },
+  "markAsCaptchaSource": {
+    "message": "Marcar como fuente de captcha"
+  },
+  "putCaptchaAnswerHere": {
+    "message": "Pon la respuesta del captcha aquí"
+  },
+  "normalManual": {
+    "message": "La ubicación de la imagen de captcha fue guardada. Ahora, elija dónde poner la respuesta."
+  },
+  "autoSubmitRules": {
+    "message": "Reglas de envío automático"
+  },
+  "autoSubmitDescription": {
+    "message": "De forma predeterminada, la función \"AutoSubmit\" envía un formulario que contiene un campo de respuesta captcha. Si se debe hacer algo más después de resolver el captcha, por ejemplo, se debe hacer clic en algún botón, defínalo aquí:"
+  },
+  "autoSubmitNoRules": {
+    "message": "Aún no se agregaron reglas..."
+  },
+  "autoSubmitCreateNewRule": {
+    "message": "Crear nueva regla"
+  },
+  "autoSubmitAlertFormOpened": {
+    "message": "¡Guarde o cancele primero el formulario abierto anteriormente!"
+  },
+  "autoSubmitAlertUrlRequired": {
+    "message": "¡Se requiere un patrón de URL!"
+  },
+  "autoSubmitAlertUrlInvalid": {
+    "message": "El patrón de URL debe ser una expresión regular válida."
+  },
+  "autoSubmitAlertCodeRequired": {
+    "message": "¡Se requiere código!"
+  },
+  "autoSubmitConfirmDelete": {
+    "message": "Eliminar regla"
+  },
+  "autoSubmitPlaceholderUrl": {
+    "message": "Patrón de URL (regex), por ejemplo:"
+  },
+  "autoSubmitPlaceholderCode": {
+    "message": "Secuencia de acciones a ejecutar, por ejemplo:"
+  },
+  "save": {
+    "message": "Guardar"
+  },
+  "cancel": {
+    "message": "Cancelar"
+  },
+  "edit": {
+    "message": "Editar"
+  },
+  "delete": {
+    "message": "Eliminar"
+  },
+  "blackListDomain": {
+    "message": "Lista negra de URLs"
+  },
+  "buttonPosition": {
+    "message": "Posición del botón"
+  },
+  "buttonPositionInner": {
+    "message": "Cerca del captcha"
+  },
+  "buttonPositionFixed": {
+    "message": "Esquina inferior derecha"
+  }
+}

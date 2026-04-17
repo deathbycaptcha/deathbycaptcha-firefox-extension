@@ -1,0 +1,180 @@
+{
+  "extName": {
+    "message": "DBC Solver: Обход и Автоматическое решение капчи"
+  },
+  "extDescription": {
+    "message": "Этот плагин помогает автоматически решать капчи на страницах сайтов."
+  },
+  "extShortName": {
+    "message": "Captcha Solver"
+  },
+  "optionsPageTitle": {
+    "message": "Настройки расширения DeathByCaptcha"
+  },
+  "accountSettings": {
+    "message": "Настройки аккаунта:"
+  },
+  "username": {
+    "message": "Имя пользователя"
+  },
+  "password": {
+    "message": "Пароль"
+  },
+  "connect": {
+    "message": "Подключить"
+  },
+  "doNotHaveAccount": {
+    "message": "У вас нет аккаунта?"
+  },
+  "createAccountToGetIt": {
+    "message": "<a href=\"#\" data-lang-link=\"$link$\" target=\"_blank\">Создайте аккаунт</a>, чтобы его получить.",
+    "placeholders": {
+      "link": {
+        "content": "$1"
+      }
+    }
+  },
+  "generalSettings": {
+    "message": "Общие настройки:"
+  },
+  "enablePlugin": {
+    "message": "Включить расширение"
+  },
+  "submitFormsAutomatically": {
+    "message": "Отправлять формы автоматически"
+  },
+  "settingsLink": {
+    "message": "Настройки"
+  },
+  "manualLink": {
+    "message": "Документация"
+  },
+  "enabledSolveAutomatically": {
+    "message": "Включено / Решать автоматически"
+  },
+  "minScore": {
+    "message": "Мин. балл:"
+  },
+  "haveAnyQuestions": {
+    "message": "Есть вопросы или предложения?"
+  },
+  "contactUs": {
+    "message": "Свяжитесь с нами: <a href=\"mailto:$email$\">$email$</a>",
+    "placeholders": {
+      "email": {
+        "content": "$1"
+      }
+    }
+  },
+  "balance": {
+    "message": "Баланс"
+  },
+  "login": {
+    "message": "Войти"
+  },
+  "logout": {
+    "message": "Выйти"
+  },
+  "accountSuccessfullyConnected": {
+    "message": "Аккаунт успешно подключён!"
+  },
+  "solveWithDeathByCaptcha": {
+    "message": "Решить с помощью DeathByCaptcha"
+  },
+  "solving": {
+    "message": "Решается..."
+  },
+  "solved": {
+    "message": "Капча решена!"
+  },
+  "delay": {
+    "message": "Задержка"
+  },
+  "seconds": {
+    "message": "секунд"
+  },
+  "ifErrorRepeat": {
+    "message": "В случае ошибки повторить"
+  },
+  "times": {
+    "message": "раз"
+  },
+  "proxySettings": {
+    "message": "Настройки прокси"
+  },
+  "useProxy": {
+    "message": "Использовать прокси"
+  },
+  "proxyType": {
+    "message": "Тип прокси"
+  },
+  "images": {
+    "message": "Изображения"
+  },
+  "markAsCaptchaSource": {
+    "message": "Отметить как источник капчи"
+  },
+  "putCaptchaAnswerHere": {
+    "message": "Введите ответ на капчу сюда"
+  },
+  "normalManual": {
+    "message": "Расположение изображения с капчей сохранено. Теперь укажите поле, куда ввести ответ."
+  },
+  "autoSubmitRules": {
+    "message": "Правила автоотправки форм"
+  },
+  "autoSubmitDescription": {
+    "message": "По умолчанию функция \"Автоотправка\" после получения ответа отправляет форму, в которой находится капча. Если после успешного решения капчи нужно сделать что-то другое, например, нажать какую-то кнопку, укажите это здесь:"
+  },
+  "autoSubmitNoRules": {
+    "message": "Пока не добавлено ни одного правила..."
+  },
+  "autoSubmitCreateNewRule": {
+    "message": "Создать новое правило"
+  },
+  "autoSubmitAlertFormOpened": {
+    "message": "Пожалуйста, сначала сохраните или отмените ранее открытую форму!"
+  },
+  "autoSubmitAlertUrlRequired": {
+    "message": "URL шаблон не заполнен!"
+  },
+  "autoSubmitAlertUrlInvalid": {
+    "message": "URL шаблон должен быть валидным регулярным выражением!"
+  },
+  "autoSubmitAlertCodeRequired": {
+    "message": "Код не заполнен!"
+  },
+  "autoSubmitConfirmDelete": {
+    "message": "Удалить правило"
+  },
+  "autoSubmitPlaceholderUrl": {
+    "message": "URL шаблон (регулярное выражение), например:"
+  },
+  "autoSubmitPlaceholderCode": {
+    "message": "Последовательность действий для выполнения, например:"
+  },
+  "save": {
+    "message": "Сохранить"
+  },
+  "cancel": {
+    "message": "Отменить"
+  },
+  "edit": {
+    "message": "Изменить"
+  },
+  "delete": {
+    "message": "Удалить"
+  },
+  "blackListDomain": {
+    "message": "Черный список URL-адресов"
+  },
+  "buttonPosition": {
+    "message": "Расположение кнопки"
+  },
+  "buttonPositionInner": {
+    "message": "Возле капчи"
+  },
+  "buttonPositionFixed": {
+    "message": "Правый нижний угол"
+  }
+}

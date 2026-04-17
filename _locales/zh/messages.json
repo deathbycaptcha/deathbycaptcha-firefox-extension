@@ -1,0 +1,180 @@
+{
+  "extName": {
+    "message": "DBC Solver: 自动识别与绕过"
+  },
+  "extDescription": {
+    "message": "该扩展程序有助于自动解决网站页面上的验证码，无论处于什么网页，都能帮助您自动识别验证码。"
+  },
+  "extShortName": {
+    "message": "验证码解决器"
+  },
+  "optionsPageTitle": {
+    "message": "Death By Captcha 扩展程序设置"
+  },
+  "accountSettings": {
+    "message": "账户设置:"
+  },
+  "username": {
+    "message": "用户名"
+  },
+  "password": {
+    "message": "密码"
+  },
+  "connect": {
+    "message": "连接"
+  },
+  "doNotHaveAccount": {
+    "message": "没有账户？"
+  },
+  "createAccountToGetIt": {
+    "message": "<a href=\"#\" data-lang-link=\"$link$\" target=\"_blank\">创建一个账户</a> 可获取API密钥。",
+    "placeholders": {
+      "link": {
+        "content": "$1"
+      }
+    }
+  },
+  "generalSettings": {
+    "message": "常规设置:"
+  },
+  "enablePlugin": {
+    "message": "启用扩展程序"
+  },
+  "submitFormsAutomatically": {
+    "message": "自动提交表单"
+  },
+  "settingsLink": {
+    "message": "设置"
+  },
+  "manualLink": {
+    "message": "手动"
+  },
+  "enabledSolveAutomatically": {
+    "message": "已启用 / 自动解决"
+  },
+  "minScore": {
+    "message": "最小分值:"
+  },
+  "haveAnyQuestions": {
+    "message": "有任何问题或建议？"
+  },
+  "contactUs": {
+    "message": "联系我们：<a href=\"mailto:$email$\">$email$</a>",
+    "placeholders": {
+      "email": {
+        "content": "$1"
+      }
+    }
+  },
+  "balance": {
+    "message": "余额"
+  },
+  "login": {
+    "message": "登录"
+  },
+  "logout": {
+    "message": "登出"
+  },
+  "accountSuccessfullyConnected": {
+    "message": "账户连接成功！"
+  },
+  "solveWithDeathByCaptcha": {
+    "message": "使用 DeathByCaptcha 解决"
+  },
+  "solving": {
+    "message": "正在解决..."
+  },
+  "solved": {
+    "message": "验证码已解决！"
+  },
+  "delay": {
+    "message": "延迟"
+  },
+  "seconds": {
+    "message": "秒"
+  },
+  "ifErrorRepeat": {
+    "message": "如有错误，请重试"
+  },
+  "times": {
+    "message": "次"
+  },
+  "proxySettings": {
+    "message": "代理设置"
+  },
+  "useProxy": {
+    "message": "使用代理服务器"
+  },
+  "proxyType": {
+    "message": "代理类型"
+  },
+  "images": {
+    "message": "图片"
+  },
+  "markAsCaptchaSource": {
+    "message": "标记为验证码来源"
+  },
+  "putCaptchaAnswerHere": {
+    "message": "请在此输入验证码答案"
+  },
+  "normalManual": {
+    "message": "验证码图片的位置已保存。现在请选择输入答案的位置。"
+  },
+  "autoSubmitRules": {
+    "message": "自动提交规则"
+  },
+  "autoSubmitDescription": {
+    "message": "默认情况下，“自动提交”功能会提交包含验证码答案字段的表单。如果验证码解决后还需要执行其他操作，例如点击某个按钮，请在此处定义："
+  },
+  "autoSubmitNoRules": {
+    "message": "还没有添加规则..."
+  },
+  "autoSubmitCreateNewRule": {
+    "message": "创建新规则"
+  },
+  "autoSubmitAlertFormOpened": {
+    "message": "请先保存或取消之前打开的表单！"
+  },
+  "autoSubmitAlertUrlRequired": {
+    "message": "网址模式为必填项！"
+  },
+  "autoSubmitAlertUrlInvalid": {
+    "message": "网址模式必须是有效的正则表达式！"
+  },
+  "autoSubmitAlertCodeRequired": {
+    "message": "需要代码！"
+  },
+  "autoSubmitConfirmDelete": {
+    "message": "删除规则"
+  },
+  "autoSubmitPlaceholderUrl": {
+    "message": "网址模式（正则表达式），例如："
+  },
+  "autoSubmitPlaceholderCode": {
+    "message": "要执行的操作序列，例如："
+  },
+  "save": {
+    "message": "保存"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "edit": {
+    "message": "编辑"
+  },
+  "delete": {
+    "message": "删除"
+  },
+  "blackListDomain": {
+    "message": "网址黑名单"
+  },
+  "buttonPosition": {
+    "message": "按钮位置"
+  },
+  "buttonPositionInner": {
+    "message": "靠近验证码"
+  },
+  "buttonPositionFixed": {
+    "message": "右下角"
+  }
+}

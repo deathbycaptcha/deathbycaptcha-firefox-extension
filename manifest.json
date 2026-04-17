@@ -1,0 +1,66 @@
+{
+    "name": "__MSG_extName__",
+    "short_name": "__MSG_extShortName__",
+    "default_locale": "en",
+    "version": "2.0.3",
+    "description": "__MSG_extDescription__",
+    "homepage_url": "https://deathbycaptcha.com/",
+    "manifest_version": 2,
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "common/config.js",
+            "common/api.js",
+            "background/background.js",
+            "content/captcha/normal/background.js"
+        ]
+    },
+    "permissions": [
+        "storage",
+        "contextMenus",
+        "<all_urls>"
+    ],
+    "browser_action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "DBC Captcha Solver: Auto Recognition and Bypass",
+        "default_icon": {
+            "32": "assets/images/icon_32.png",
+            "128": "assets/images/icon_128.png"
+        }
+    },
+    "options_ui": {
+        "page": "options/options.html",
+        "open_in_tab": true
+    },
+    "icons": {
+        "32": "assets/images/icon_32.png",
+        "128": "assets/images/icon_128.png"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "run_at": "document_start",
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "content/style.css"
+            ],
+            "js": [
+                "vendor/jquery/3.5.1/jquery.min.js",
+                "common/config.js",
+                "content/core_helpers.js",
+                "content/script.js",
+                "content/captcha/geetest/processor.js",
+                "content/captcha/geetest_v4/processor.js",
+                "content/captcha/recaptcha/processor.js",
+                "content/captcha/normal/hunter.js",
+                "content/captcha/normal/processor.js"
+            ]
+        }
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "web_accessible_resources": [
+        "assets/images/*"
+    ]
+}

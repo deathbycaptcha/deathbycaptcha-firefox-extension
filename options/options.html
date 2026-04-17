@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title data-lang="optionsPageTitle"></title>
+    <link rel="stylesheet" href="/options/options.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+</head>
+<body>
+
+<header>
+    <a href="#" target="_blank" data-lang-link="/">
+        <img src="/assets/images/logo.png" height="50">
+    </a>
+</header>
+
+<div class="container" style="display: none;">
+
+
+    <form id="config-form">
+
+        <h2 data-lang="generalSettings"></h2>
+
+        <div class="content">
+
+            <table class="config">
+                <tr>
+                    <td>
+                        <span data-lang="enablePlugin"></span>
+                    </td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="isPluginEnabled" id="isPluginEnabled">
+                            <label for="isPluginEnabled"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span data-lang="submitFormsAutomatically"></span>
+                        (<span data-lang="delay"></span>:
+                        <input type="number" width="1px" min="0" max="900" name="submitFormsDelay" placeholder="0" data-type="int">
+                        <span data-lang="seconds"></span>
+                        )
+                    </td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSubmitForms" id="autoSubmitForms">
+                            <label for="autoSubmitForms"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span data-lang="ifErrorRepeat"></span>
+                        <input type="number" width="1px" min="0" max="900" name="repeatOnErrorTimes" placeholder="0" data-type="int">
+                        <span data-lang="times"></span>
+
+                        (<span data-lang="delay"></span>
+                        <input type="number" width="1px" min="0" max="900" name="repeatOnErrorDelay" placeholder="0" data-type="int">
+                        <span data-lang="seconds"></span>
+                        )
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span data-lang="buttonPosition"></span>
+                    </td>
+                    <td style="padding-left: 0">
+                        <select name="buttonPosition">
+                            <option value="inner" data-lang="buttonPositionInner">In form with captcha</option>
+                            <option value="fixed" data-lang="buttonPositionFixed">Relative by the viewport</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <h2 style="display:inline;" data-lang="enabledSolveAutomaticallyTitle"></h2><h2 style="display:inline;" data-lang="enabledSolveAutomatically"></h2>
+
+        <div class="content">
+
+            <table class="config">
+                <tr>
+                    <td>
+                        <span data-lang="images"></span>
+                    </td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="enabledForNormal" id="enabledForNormal">
+                            <label for="enabledForNormal"></label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSolveNormal" id="autoSolveNormal">
+                            <label for="autoSolveNormal"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>reCaptcha V2</td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="enabledForRecaptchaV2" id="enabledForRecaptchaV2">
+                            <label for="enabledForRecaptchaV2"></label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSolveRecaptchaV2" id="autoSolveRecaptchaV2">
+                            <label for="autoSolveRecaptchaV2"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>reCaptcha V2 Invisible</td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="enabledForInvisibleRecaptchaV2" id="enabledForInvisibleRecaptchaV2">
+                            <label for="enabledForInvisibleRecaptchaV2"></label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSolveInvisibleRecaptchaV2" id="autoSolveInvisibleRecaptchaV2">
+                            <label for="autoSolveInvisibleRecaptchaV2"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        reCaptcha V3
+                    </td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="enabledForRecaptchaV3" id="enabledForRecaptchaV3">
+                            <label for="enabledForRecaptchaV3"></label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSolveRecaptchaV3" id="autoSolveRecaptchaV3">
+                            <label for="autoSolveRecaptchaV3"></label>
+                        </div>
+                    </td>
+                </tr>
+<!--                 <tr>
+                    <td>hCaptcha</td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="enabledForHCaptcha" id="enabledForHCaptcha">
+                            <label for="enabledForHCaptcha"></label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSolveHCaptcha" id="autoSolveHCaptcha">
+                            <label for="autoSolveHCaptcha"></label>
+                        </div>
+                    </td>
+                </tr>
+ -->                <tr>
+                    <td>GeeTest</td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="enabledForGeetest" id="enabledForGeetest">
+                            <label for="enabledForGeetest"></label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSolveGeetest" id="autoSolveGeetest">
+                            <label for="autoSolveGeetest"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GeeTest V4</td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="enabledForGeetest_v4" id="enabledForGeetest_v4">
+                            <label for="enabledForGeetest_v4"></label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSolveGeetest_v4" id="autoSolveGeetest_v4">
+                            <label for="autoSolveGeetest_v4"></label>
+                        </div>
+                    </td>
+                </tr>
+<!--                 <tr>
+                    <td>Funcaptcha</td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="enabledForArkoselabs" id="enabledForArkoselabs">
+                            <label for="enabledForArkoselabs"></label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" name="autoSolveArkoselabs" id="autoSolveArkoselabs">
+                            <label for="autoSolveArkoselabs"></label>
+                        </div>
+                    </td>
+                </tr>
+ -->            </table>
+
+        </div>
+
+        <h2 data-lang="proxySettings"></h2>
+
+        <div class="content">
+            <table class="config">
+                <tr>
+                    <td>
+                        <span data-lang="useProxy"></span>
+                    </td>
+                    <td>
+                        <div class="switch">
+                            <input type="checkbox" name="useProxy" id="useProxy">
+                            <label for="useProxy"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span data-lang="proxyType"></span>
+                    </td>
+                    <td>
+                        <select name="proxytype">
+                            <option value="HTTP">HTTP</option>
+                            <option value="HTTPS">HTTPS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="proxy" placeholder="http://login:password@123.123.123.123:3128">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="black-list">
+            <h2 data-lang="blackListDomain" style="margin-bottom: 4px;"></h2>
+            <div class="content" style="padding: 20px">
+                <textarea name="blackListDomain" id="blackListDomain" rows="4" placeholder="example.com"></textarea>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+<br><br>
+
+<!-- SCRIPTS -->
+<script src="/vendor/jquery/3.5.1/jquery.min.js"></script>
+<script src="/common/config.js"></script>
+<script src="/common/i18n.js"></script>
+<script src="/options/options.js"></script>
+<script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

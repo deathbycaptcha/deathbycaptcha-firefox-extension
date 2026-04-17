@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/popup/popup.css">
+	<link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="content ">
+
+			<form id="login-form" style="display: none;">
+				<div class="text-center header">
+					<a href="#" target="_blank" data-lang-link="/">
+						<img src="/assets/images/logo.png" height="35">
+					</a>
+				</div>
+				<br><br>
+				<div class="form-floating">
+					<input name="username" type="text" class="form-control" id="floatingInput" placeholder="data-lang='username'">
+					<label for="floatingInput"><span data-lang="username"></span></label>
+				</div>
+
+				<div class="form-floating">
+					<input name="password" type="password" class="form-control" id="floatingPassword" placeholder="data-lang='password'">
+					<label for="floatingPassword"><span data-lang="password"></span></label>
+				</div>
+
+				<button data-lang="login" class="default-btn btn btn-outline-warning"></button>
+				<div class="result"></div>
+				<br>
+				<div class="hint">
+					<span data-lang="doNotHaveAccount"></span><br>
+					<span data-lang="createAccountToGetIt" data-lang-string="/register"></span>
+				</div>
+			</form>
+
+			<div id="account-info" style="display: none;">
+
+				<div class="panel header">
+					<div class="row align-items-center">
+						<div class="col-auto">
+							<a href="#" target="_blank" data-lang-link="/">
+								<img src="/assets/images/logo.png" height="45">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-dark mb-2">
+					<div class="container">
+						<div class="row">
+						  <div class="col text-left">
+							<span data-lang="username"></span>
+							<span>:</span>
+						  </div>
+						  <div class="col text-right">
+							<span class="username"></span>
+						</div>
+					</div>
+				</div>
+
+					<div class="container">
+						<div class="row">
+						  <div class="col text-left">
+							<span data-lang="balance"></span>
+							<span>:</span>
+						  </div>
+						  <div class="col text-right">
+							<span class="balance"></span>
+						  </div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row">
+						  <div class="col text-left">
+							<a href="/manual/manual.html" target="_blank" class="popup-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+								<path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+								<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+								<path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+							  	</svg><span data-lang="manualLink"></span></a>
+						  </div>
+						  <div class="col text-right">
+							<a href="#" class="logout"><span class="logout" data-lang="logout"></span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+								<path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+							  </svg></a>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<form id="settings-form">
+					<div class="panel panel-dark">
+
+						<div class="text-center">
+							<a href="/options/options.html" target="_blank" class="popup-link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+									<path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+									<path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+								</svg><span data-lang="settingsLink"></span>
+							</a>
+						</div>
+
+						<div class="panel-separator my-10"></div>
+						<table>
+							<tr>
+								<div class="form-switch">
+									<td>
+										<label for="isPluginEnabled" data-lang="enablePlugin"></label>
+									</td>
+									<td>
+										<input type="checkbox" class="form-check-input" role="switch" name="isPluginEnabled" id="isPluginEnabled">
+									</td>
+								</div>
+								<div class="line-separator"></div>
+							</tr>
+							<div class="line-separator"></div>
+							<tr>
+								<div class="form-switch">
+									<td>
+										<label for="isPluginEnabled" data-lang="submitFormsAutomatically"></label>
+									</td>
+									<td>
+										<input type="checkbox" class="form-check-input" name="autoSubmitForms">
+									</td>
+								</div>
+								<div class="line-separator"></div>
+							</tr>
+							<tr>
+								<td>
+									<span data-lang="delay"></span>
+									<input type="number" width="1px" min="0" max="900" name="submitFormsDelay" placeholder="0" data-type="int">
+									<span data-lang="seconds"></span>
+									</div>
+								</td>
+								<td>
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator my-10"></div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<span data-lang="ifErrorRepeat"></span>
+									<input type="number" min="0" max="99" name="repeatOnErrorTimes" placeholder="0" data-type="int">
+									<span data-lang="times"></span>
+
+									<div class="line-separator"></div>
+									<span data-lang="delay"></span>
+									<input type="number" min="0" max="900" name="repeatOnErrorDelay" placeholder="0" data-type="int">
+									<span data-lang="seconds"></span>
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator my-10"></div>
+								</td>
+							</tr>
+						</table>
+
+						<div class="panel-title text-center" style="margin-top: 7px; margin-bottom: -20px;" data-lang="enabledSolveAutomaticallyTitle"></div>
+						<div class="panel-title text-center" data-lang="enabledSolveAutomatically"></div>
+						<div class="panel-separator"></div>
+						<table>
+							<tr>
+								<td>
+									<span data-lang="images"></span>
+									<span data-lang="images"></span>
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="enabledForNormal">
+									<input class="form-check-input" type="checkbox" name="autoSolveNormal">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									reCaptcha V2
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="enabledForRecaptchaV2">
+									<input class="form-check-input" type="checkbox" name="autoSolveRecaptchaV2">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									reCaptcha V2 Invisible
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="enabledForInvisibleRecaptchaV2">
+									<input class="form-check-input" type="checkbox" name="autoSolveInvisibleRecaptchaV2">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									reCaptcha V3
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="enabledForRecaptchaV3">
+									<input class="form-check-input" type="checkbox" name="autoSolveRecaptchaV3">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+<!-- 							<tr>
+								<td>
+									hCaptcha
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="enabledForHCaptcha">
+									<input class="form-check-input" type="checkbox" name="autoSolveHCaptcha">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+ -->							<tr>
+								<td>
+									GeeTest
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="enabledForGeetest">
+									<input class="form-check-input" type="checkbox" name="autoSolveGeetest">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									GeeTest V4
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="enabledForGeetest_v4">
+									<input class="form-check-input" type="checkbox" name="autoSolveGeetest_v4">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+<!-- 							<tr>
+								<td>
+									FunCaptcha
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="enabledForArkoselabs">
+									<input class="form-check-input" type="checkbox" name="autoSolveArkoselabs">
+								</td>
+							</tr>
+ -->						</table>
+
+						<div class="panel-title text-center" data-lang="proxySettings"></div>
+						<div class="panel-separator"></div>
+						<table>
+							<tr>
+								<td>
+									<span data-lang="useProxy"></span>
+								</td>
+								<td>
+									<input class="form-check-input" type="checkbox" name="useProxy">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span data-lang="proxyType"></span>
+								</td>
+								<td>
+									<select name="proxytype">
+										<option value="HTTP">HTTP</option>
+										<option value="HTTPS">HTTPS</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="panel-separator"></div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input type="text" name="proxy" placeholder="http://user:password@123.456.789.123:8080">
+								</td>
+							</tr>
+						</table>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- SCRIPTS -->
+	<script src="/vendor/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/common/config.js"></script>
+	<script src="/common/i18n.js"></script>
+	<script src="/popup/popup.js"></script>
+	<script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+
+* {
+    box-sizing: border-box;
+}
+#account-info {
+    width: 300px !important;
+}
+body {
+    margin: 0;
+    background-color: #232323 !important;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    position: relative;
+}
+.container {
+    width: 300px;
+}
+header {
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    color: white;
+}
+span, label, td {
+    color: white;
+}
+
+input[type=number] {
+    width: 20%;
+}
+
+
+.panel {
+    border-radius: 6px;
+    padding: 10px;
+}
+.panel.panel-dark {
+    background-color: #141414;
+}
+.panel-separator {
+    height: 2px;
+    background-color: #232323;
+    margin: 5px -11px;
+}
+.panel-title {
+    color: gray;
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+.line-separator {
+    padding: 3px 0;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items-center {
+    align-items: center;
+}
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+.d-none {
+    display: none !important;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pb-5 {
+    padding-bottom: 5px;
+}
+
+.account-info-header {
+    padding: 15px 5px;
+    display: flex;
+}
+
+
+.balance {
+    color: #ff893a !important;
+    display: inline-block;
+    margin-right: 5px;
+}
+.balance + img {
+    vertical-align: text-top;
+}
+
+.logout {
+    color: #0075ff !important;
+    display: inline-block;
+}
+.logout:hover {
+    text-decoration: none;
+}
+.logout > img {
+    vertical-align: text-top;
+    margin-left: 5px;
+}
+
+
+
+.main-loader {
+    text-align: center;
+    padding: 15px;
+}
+.content {
+    padding: 6px;
+}
+#login-form {
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+}
+#login-form label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+#login-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #141414;
+    color: white;
+}
+#login-form .hint {
+    margin-top: 20px;
+}
+.hint {
+    color: #9f9f9f;
+    font-size: 12px;
+}
+.hint a {
+    color: #ff9900;
+}
+.hint a:hover {
+    color: #ffa640;
+    text-decoration: none;
+}
+.default-btn {
+    background-color: #141414;;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 4px;
+    color: #ff7300;
+    flex-shrink: 0;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: none;
+}
+.default-btn:hover  {
+    cursor: pointer;
+    background-color: #000000;
+    border-color: rgb(210, 227, 252);
+}
+.error {
+    color: white;
+    background-color: #cd3939;
+    border: 2px solid white;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table td + td {
+    padding-left: 16px;
+}
+table td:last-child {
+    text-align: right;
+}
+table td:first-child {
+    text-align: left;
+}
+table tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+
+input[name=proxy] {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 7px;
+    margin: 5px 0;
+    background-color: #232323;
+    color: white;
+}
+
+.cog {
+    height: 12px;
+    vertical-align: middle;
+}
+
+.popup-link {
+    color: white;
+}
+
+.popup-link > svg {
+    margin-right: 2px;
+    fill: white;
+    width: 1em;
+    height: 1em;
+    top: .125em;
+    position: relative;
+}
