@@ -20,7 +20,7 @@ This is the **official Firefox browser extension** for the **Death By Captcha** 
 | **Status** | Fully Functional & Maintained |
 
 ## Installation & Usage
-1. Download the extension from the [Official Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/death-by-captcha/).
+1. Download the extension from the [Official Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/dbc-solver/).
 2. Enter your DBC credentials in the extension options.
 3. The extension will automatically detect and solve captchas on the websites you visit.
 
