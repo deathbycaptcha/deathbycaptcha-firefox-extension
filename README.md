@@ -1,13 +1,13 @@
 # Death By Captcha: Official Firefox Extension
 
-[![Firefox Add-on](https://img.shields.io/badge/Firefox-Add--on-orange)](https://addons.mozilla.org/en-US/firefox/addon/death-by-captcha/)
+[![Firefox Add-on](https://img.shields.io/badge/Firefox-Add--on-orange)](https://addons.mozilla.org/en-US/firefox/addon/dbc-solver/)
 
 ## Overview
 This is the **official Firefox browser extension** for the **Death By Captcha** service. It provides a functional, high-performance integration to automate captcha solving directly within the Firefox browser.
 
 ## Key Features
 * **Official Recognition:** Verified plug-in developed by the Death By Captcha team.
-* **Full Automation:** Seamlessly solves reCAPTCHA (v2, v3), hCaptcha, and image-based captchas.
+* **Full Automation:** Seamlessly solves reCAPTCHA (v2, v3), GeeTest, and image-based captchas.
 * **Native Integration:** Specifically optimized for the Firefox (Gecko) engine.
 * **Easy Configuration:** Simple setup to connect with the Death By Captcha API.
 
