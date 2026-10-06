@@ -6,6 +6,19 @@
     "description": "__MSG_extDescription__",
     "homepage_url": "https://deathbycaptcha.com/",
     "manifest_version": 2,
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{8b33ec70-3dc4-477d-88aa-7344978b3255}",
+            "strict_min_version": "140",
+            "data_collection_permissions": {
+                "required": [
+                    "authenticationInfo",
+                    "browsingActivity",
+                    "websiteContent"
+                ]
+            }
+        }
+    },
     "background": {
         "persistent": true,
         "scripts": [
