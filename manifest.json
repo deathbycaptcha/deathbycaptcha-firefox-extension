@@ -9,7 +9,7 @@
     "browser_specific_settings": {
         "gecko": {
             "id": "{8b33ec70-3dc4-477d-88aa-7344978b3255}",
-            "strict_min_version": "140",
+            "strict_min_version": "140.0",
             "data_collection_permissions": {
                 "required": [
                     "authenticationInfo",
@@ -17,6 +17,9 @@
                     "websiteContent"
                 ]
             }
+        },
+        "gecko_android": {
+            "strict_min_version": "142.0"
         }
     },
     "background": {
